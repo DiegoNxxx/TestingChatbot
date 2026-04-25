@@ -100,13 +100,18 @@ function TaskList({ tasks, setTasks }) {
           
           {/* Encabezado de sprint */}
           <h3 className="sprint-title">
-            {sprintName === "Sin Sprint" ? sprintName : `Sprint ${sprintName}`}
+            {sprintName === "Sin Sprint" ? sprintName : `${sprintName}`}
           </h3>
           
           {/* Cabeceras de tabla */}
           <div className="task-header">
-            <span>Title</span> <span>Est. Hours</span> <span>Due date</span> 
-            <span>Priority</span> <span>Start</span> <span>Complete</span> <span>Details</span>
+            <span>Title</span> 
+            <span>Est. Hours</span>
+            <span>Due date</span> 
+            <span>Priority</span> 
+            <span>Start</span> 
+            <span>Complete</span> 
+            <span>Details</span>
           </div>
 
           {/* Mapeo de tareas por grupo */}

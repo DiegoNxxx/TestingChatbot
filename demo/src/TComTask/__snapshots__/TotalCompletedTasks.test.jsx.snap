@@ -1,0 +1,635 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`TotalCompletedTasks > snapshot dashboard 1`] = `
+<div>
+  <div
+    class="pending-wrapper"
+  >
+    <h2
+      class="pending-title-main"
+    >
+      Tasks Dashboard by Sprint
+    </h2>
+    <section
+      class="sprint-group"
+    >
+      <h3
+        class="sprint-title"
+      >
+        Sprint 1
+      </h3>
+      <div
+        class="sprint-dashboard-layout"
+      >
+        <div
+          class="tasks-chart-panel bar-chart-section"
+        >
+          <h4
+            class="chart-title"
+          >
+            Tasks per user
+          </h4>
+          <div
+            class="bar-chart"
+          >
+            <div
+              class="bar-group"
+            >
+              <div
+                class="bars-container"
+              >
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar completed"
+                    style="height: 100%;"
+                  />
+                </div>
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar started"
+                    style="height: 0%;"
+                  />
+                </div>
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar pending"
+                    style="height: 0%;"
+                  />
+                </div>
+              </div>
+              <span
+                class="user-name"
+              >
+                Diego
+              </span>
+              <div
+                class="chart-legend-details"
+              >
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-completed"
+                  />
+                  1
+                   Completed
+                </span>
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-started"
+                  />
+                  0
+                   Started
+                </span>
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-pending"
+                  />
+                  0
+                   pending
+                </span>
+              </div>
+            </div>
+            <div
+              class="bar-group"
+            >
+              <div
+                class="bars-container"
+              >
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar completed"
+                    style="height: 100%;"
+                  />
+                </div>
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar started"
+                    style="height: 0%;"
+                  />
+                </div>
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar pending"
+                    style="height: 0%;"
+                  />
+                </div>
+              </div>
+              <span
+                class="user-name"
+              >
+                Javier
+              </span>
+              <div
+                class="chart-legend-details"
+              >
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-completed"
+                  />
+                  1
+                   Completed
+                </span>
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-started"
+                  />
+                  0
+                   Started
+                </span>
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-pending"
+                  />
+                  0
+                   pending
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="hours-chart-panel bar-chart-section"
+        >
+          <h4
+            class="chart-title"
+          >
+            Est. vs Actual Hours
+          </h4>
+          <div
+            class="bar-chart"
+          >
+            <div
+              class="bar-group"
+            >
+              <div
+                class="bars-container"
+              >
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar estimated"
+                    style="height: 83.33333333333334%;"
+                  />
+                </div>
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar actual"
+                    style="height: 100%;"
+                  />
+                </div>
+              </div>
+              <span
+                class="user-name"
+              >
+                Diego
+              </span>
+              <div
+                class="chart-legend-details"
+              >
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-estimated"
+                  />
+                  Estimated 
+                  5
+                   h
+                </span>
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-actual"
+                  />
+                  Real Hours 
+                  6
+                   h
+                </span>
+              </div>
+            </div>
+            <div
+              class="bar-group"
+            >
+              <div
+                class="bars-container"
+              >
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar estimated"
+                    style="height: 100%;"
+                  />
+                </div>
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar actual"
+                    style="height: 66.66666666666666%;"
+                  />
+                </div>
+              </div>
+              <span
+                class="user-name"
+              >
+                Javier
+              </span>
+              <div
+                class="chart-legend-details"
+              >
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-estimated"
+                  />
+                  Estimated 
+                  3
+                   h
+                </span>
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-actual"
+                  />
+                  Real Hours 
+                  2
+                   h
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="global-progress-section"
+        style="margin-top: 20px;"
+      >
+        <p>
+          Sprint Completion: 
+          100
+          %
+        </p>
+        <div
+          class="percentage-container global"
+        >
+          <div
+            class="percentage-bar"
+          >
+            <div
+              class="percentage-fill"
+              style="width: 100%;"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;
+
+exports[`snapshot dashboard 1`] = `
+<div>
+  <div
+    class="pending-wrapper"
+  >
+    <h2
+      class="pending-title-main"
+    >
+      Tasks Dashboard by Sprint
+    </h2>
+    <section
+      class="sprint-group"
+    >
+      <h3
+        class="sprint-title"
+      >
+        Sprint 1
+      </h3>
+      <div
+        class="sprint-dashboard-layout"
+      >
+        <div
+          class="tasks-chart-panel bar-chart-section"
+        >
+          <h4
+            class="chart-title"
+          >
+            Tasks per user
+          </h4>
+          <div
+            class="bar-chart"
+          >
+            <div
+              class="bar-group"
+            >
+              <div
+                class="bars-container"
+              >
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar completed"
+                    style="height: 100%;"
+                  />
+                </div>
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar started"
+                    style="height: 0%;"
+                  />
+                </div>
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar pending"
+                    style="height: 0%;"
+                  />
+                </div>
+              </div>
+              <span
+                class="user-name"
+              >
+                Diego
+              </span>
+              <div
+                class="chart-legend-details"
+              >
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-completed"
+                  />
+                  1
+                   Completed
+                </span>
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-started"
+                  />
+                  0
+                   Started
+                </span>
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-pending"
+                  />
+                  0
+                   pending
+                </span>
+              </div>
+            </div>
+            <div
+              class="bar-group"
+            >
+              <div
+                class="bars-container"
+              >
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar completed"
+                    style="height: 100%;"
+                  />
+                </div>
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar started"
+                    style="height: 0%;"
+                  />
+                </div>
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar pending"
+                    style="height: 0%;"
+                  />
+                </div>
+              </div>
+              <span
+                class="user-name"
+              >
+                Javier
+              </span>
+              <div
+                class="chart-legend-details"
+              >
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-completed"
+                  />
+                  1
+                   Completed
+                </span>
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-started"
+                  />
+                  0
+                   Started
+                </span>
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-pending"
+                  />
+                  0
+                   pending
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="hours-chart-panel bar-chart-section"
+        >
+          <h4
+            class="chart-title"
+          >
+            Est. vs Actual Hours
+          </h4>
+          <div
+            class="bar-chart"
+          >
+            <div
+              class="bar-group"
+            >
+              <div
+                class="bars-container"
+              >
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar estimated"
+                    style="height: 83.33333333333334%;"
+                  />
+                </div>
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar actual"
+                    style="height: 100%;"
+                  />
+                </div>
+              </div>
+              <span
+                class="user-name"
+              >
+                Diego
+              </span>
+              <div
+                class="chart-legend-details"
+              >
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-estimated"
+                  />
+                  Estimated 
+                  5
+                   h
+                </span>
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-actual"
+                  />
+                  Real Hours 
+                  6
+                   h
+                </span>
+              </div>
+            </div>
+            <div
+              class="bar-group"
+            >
+              <div
+                class="bars-container"
+              >
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar estimated"
+                    style="height: 100%;"
+                  />
+                </div>
+                <div
+                  class="bar-track"
+                >
+                  <div
+                    class="bar actual"
+                    style="height: 66.66666666666666%;"
+                  />
+                </div>
+              </div>
+              <span
+                class="user-name"
+              >
+                Javier
+              </span>
+              <div
+                class="chart-legend-details"
+              >
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-estimated"
+                  />
+                  Estimated 
+                  3
+                   h
+                </span>
+                <span
+                  class="legend-item"
+                >
+                  <span
+                    class="dot-actual"
+                  />
+                  Real Hours 
+                  2
+                   h
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="global-progress-section"
+        style="margin-top: 20px;"
+      >
+        <p>
+          Sprint Completion: 
+          100
+          %
+        </p>
+        <div
+          class="percentage-container global"
+        >
+          <div
+            class="percentage-bar"
+          >
+            <div
+              class="percentage-fill"
+              style="width: 100%;"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+`;

@@ -2,7 +2,7 @@ import { render, screen } from "@testing-library/react";
 import "@testing-library/jest-dom";
 import TotalCompletedTasks from "./TotalCompletedTasks";
 
-// Mock de tareas (datos base para KPIs)
+// Datos base KPI equipo + usuarios
 const mockTasks = [
   {
     id: 1,
@@ -24,40 +24,62 @@ const mockTasks = [
   }
 ];
 
-// Mock de usuarios
+// Usuarios relacionados a tareas
 const mockUsers = [
   { id: 1, name: "Diego" },
   { id: 2, name: "Javier" }
 ];
 
-test("renders KPIs per sprint and per user", () => {
-  // Renderizar componente con datos simulados
-  render(<TotalCompletedTasks tasks={mockTasks} users={mockUsers} />);
+describe("TotalCompletedTasks", () => {
 
-  // ===== KPI EQUIPO =====
+  test("renders sprint KPI correctly", () => {
+    render(<TotalCompletedTasks tasks={mockTasks} users={mockUsers} />);
 
-  // Verificar sprint visible
-  expect(screen.getByText(/Sprint 1/i)).toBeInTheDocument();
+    // Sprint actual
+    expect(screen.getByText(/Sprint 1/i)).toBeInTheDocument();
 
-  // Verificar % de tareas completadas (2 de 2 → 100%)
-  expect(screen.getByText(/Sprint Completion: 100%/i)).toBeInTheDocument();
+    // % completado del sprint
+    expect(screen.getByText(/Sprint Completion: 100%/i)).toBeInTheDocument();
+  });
 
-  // KPI POR PERSONA
+  test("renders users involved in the sprint", () => {
+    render(<TotalCompletedTasks tasks={mockTasks} users={mockUsers} />);
 
-  // Verificar nombres de usuarios (sin asumir cantidad exacta)
-  expect(screen.getAllByText("Diego").length).toBeGreaterThan(0);
-  expect(screen.getAllByText("Javier").length).toBeGreaterThan(0);
+    // Usuarios presentes en UI
+    expect(screen.getAllByText("Diego").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("Javier").length).toBeGreaterThan(0);
+  });
 
-  // Verificar tareas completadas por usuario
-  expect(screen.getAllByText(/1 Completed/i).length).toBeGreaterThan(0);
+  test("renders completed tasks per user", () => {
+    render(<TotalCompletedTasks tasks={mockTasks} users={mockUsers} />);
 
-  // Verificar horas trabajadas (Estimated vs Real)
-  expect(screen.getByText(/Estimated 5 h/i)).toBeInTheDocument();
-  expect(screen.getByText(/Real Hours 6 h/i)).toBeInTheDocument();
+    // KPI tareas completadas por usuario
+    expect(screen.getAllByText(/1 Completed/i).length).toBeGreaterThan(0);
+  });
 
-  // UI BASE (evitar depender de implementación interna)
+  test("renders estimated vs real hours", () => {
+    render(<TotalCompletedTasks tasks={mockTasks} users={mockUsers} />);
 
-  // Verificar labels principales
-  expect(screen.getAllByText(/Tasks per user/i).length).toBeGreaterThan(0);
-  expect(screen.getAllByText(/Est. vs Actual Hours/i).length).toBeGreaterThan(0);
+    // Comparación horas estimadas vs reales
+    expect(screen.getByText(/Estimated 5 h/i)).toBeInTheDocument();
+    expect(screen.getByText(/Real Hours 6 h/i)).toBeInTheDocument();
+  });
+
+  test("renders base UI labels", () => {
+    render(<TotalCompletedTasks tasks={mockTasks} users={mockUsers} />);
+
+    // Labels principales dashboard
+    expect(screen.getAllByText(/Tasks per user/i).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Est. vs Actual Hours/i).length).toBeGreaterThan(0);
+  });
+
+  test("snapshot dashboard", () => {
+    const { container } = render(
+      <TotalCompletedTasks tasks={mockTasks} users={mockUsers} />
+    );
+
+    // Estructura general UI
+    expect(container).toMatchSnapshot();
+  });
+
 });

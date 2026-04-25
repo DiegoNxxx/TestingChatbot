@@ -76,7 +76,7 @@ function App() {
       )
     : [];
 
-  // Agregar tarea (recargando desde backend)
+  // Agregar tarea 
   const addNewTask = async () => {
     await loadTasks();
     setVista("Mypending");
@@ -98,7 +98,7 @@ function App() {
         </div>
       </header>
 
-      {/* MODAL LOGIN */}
+      {/*LOGIN */}
       {showLogin && (
         <Login
           onLogin={handleLogin}
@@ -127,7 +127,6 @@ function App() {
             />
           )}
 
-          {/* Resto de vistas */}
           {vista !== "add" && (
             <>
               {/* Tareas completadas del usuario */}
@@ -139,7 +138,7 @@ function App() {
               {vista === "TeamAnalytics" && (
                 <TotalCompletedTasks 
                   tasks={tasks}
-                  users={users}   // <- esto es CLAVE
+                  users={users}  
                 />
               )}
 
