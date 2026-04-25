@@ -1,0 +1,95 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Hacer login",
+      "description": "Implementar autenticación",
+      "status": "pending",
+      "priority": 3,
+      "dueDate": "2026-04-30",
+      "userId": 1,
+      "estimatedHours": 8,
+      "actualHours": 5,
+      "sprint": "Sprint 1"
+    },
+    {
+      "id": 2,
+      "title": "Diseñar UI",
+      "description": "Pantalla principal",
+      "status": "completed",
+      "priority": 2,
+      "dueDate": "2026-05-02",
+      "userId": 2,
+      "estimatedHours": 12,
+      "actualHours": 0,
+      "sprint": "Sprint 2"
+    },
+    {
+    "id": 3,
+    "title": "Configurar base de datos",
+    "description": "Configurar PostgreSQL en AWS",
+    "status": "in_progress",
+    "priority": 1,
+    "dueDate": "2026-04-26",
+    "userId": 3,
+    "estimatedHours": 6,
+    "actualHours": 4,
+    "sprint": "Sprint 1"
+  },
+  {
+    "id": 4,
+    "title": "Crear endpoints API",
+    "description": "Desarrollar controladores para gestión de usuarios",
+    "status": "pending",
+    "priority": 1,
+    "dueDate": "2026-05-05",
+    "userId": 4,
+    "estimatedHours": 16,
+    "actualHours": 0,
+    "sprint": "Sprint 2"
+  },
+  {
+    "id": 5,
+    "title": "Escribir pruebas unitarias",
+    "description": "Cubrir lógica de negocio del servicio de Login",
+    "status": "pending",
+    "priority": 3,
+    "dueDate": "2026-05-10",
+    "userId": 2,
+    "estimatedHours": 4,
+    "actualHours": 0,
+    "sprint": "Sprint 2"
+  },
+  {
+    "id": 6,
+    "title": "Refactorizar módulo de pagos",
+    "description": "Optimizar la integración con Stripe",
+    "status": "completed",
+    "priority": 2,
+    "dueDate": "2026-04-20",
+    "userId": 4,
+    "estimatedHours": 10,
+    "actualHours": 12,
+    "sprint": "Sprint 1"
+  },
+  {
+    "id": 7,
+    "title": "Diseñar esquema de autenticación",
+    "description": "Implementar tablas de usuarios y roles en el esquema de base de datos",
+    "status": "completed",
+    "priority": 2,
+    "dueDate": "2026-04-27",
+    "userId": 2,
+    "estimatedHours": 8,
+    "actualHours": 0,
+    "sprint": "Sprint 1"
+}
+    
+  ],
+  "users": [
+    { "id": 1, "name": "Diego" },
+    { "id": 2, "name": "Javier" },
+    { "id": 3, "name": "Paco" },
+    { "id": 4, "name": "Álvaro" }
+  ]
+}
